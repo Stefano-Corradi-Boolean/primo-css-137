@@ -1,0 +1,92 @@
+/* GENERAL */
+
+body{
+  background-color: brown;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* mettendo la virgola fra più selettori l'istruzione interessarà tutti  */
+h1, h2, h3, h4{
+  text-transform: uppercase;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+span{
+  color: yellow;
+}
+
+/*************** UTILS ****************/
+.w-50{
+  width: 50%;
+}
+
+/* ELEMENTS */
+.box{
+  font-family: "Montserrat", sans-serif;
+  background-color: green;
+  color: yellow;
+  width: 60%;
+  border: 1px solid black;
+}
+
+/* istruzione per i box che sono anche square */
+.box.square{
+  width: 300px;
+  height: 300px;
+  /* font bold */
+  font-weight:;
+}
+
+.box.full-w{
+  width: 100%;
+}
+
+.salmon-box{
+  /* background-color: #F07E6A; */
+  background-color: rgb(240, 126, 106);
+}
+
+.salmon-box.transp{
+  background-color: rgba(240, 126, 106, 0.5);
+}
+
+#main-title{
+  color: yellow;
+}
+
+/* rem è in propostione alla dimensione del font di default  */
+.primary-text{
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+/* più selettori separati da spazio significa che sono uno ineestato nell'altro  */
+.primary-text span{
+  color: green;
+
+}
+
+/* em è in proporzione alla dimensione del font del genitore  */
+p.secondary-text{
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.secondary-text span,
+.description,
+section#info div p
+{
+  color: burlywood;
+  font-style: italic;
+}
+
+.box-image{
+  background-image: url('../img/bosco.jpg');
+  min-height: 300px;
+  background-size:cover;
+}
