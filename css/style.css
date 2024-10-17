@@ -19,6 +19,37 @@ body{
   margin: 0 auto;
 }
 
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  background-color: azure;
+}
+
+/* MENU */
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 15px;
+}
+nav ul a{
+  color: white;
+  background-color: brown;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul a:hover{
+  background-color: burlywood;
+  color: brown;
+}
+
 /* mettendo la virgola fra più selettori l'istruzione interessarà tutti  */
 h1, h2, h3, h4{
   text-transform: uppercase;
